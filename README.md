@@ -1,4 +1,3 @@
-# Blood-Bank-Management
 #include"abhitech.h"
 #include<iostream>
 #include<conio.h>
@@ -101,7 +100,7 @@ void BGroup::Showbg()
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
               }
 
               else
@@ -119,11 +118,11 @@ void BGroup::Showbg()
                      textrc(str,23,90,14,4,0);
 
                      fflush(stdin) ;
-                     ch = getch() ;
+                     ch = _getch() ;
 
                      if(ch==0 || ch== -32)
                      {
-                         ch= getch() ;
+                         ch= _getch() ;
 
                          if(ch == 80 || ch==77)
                          {
@@ -372,7 +371,7 @@ void Donor::setlddate(Date &d)
                  sprintf(str,"%-12s"," Enter Correct Bgid ");
                  textrc(str,r,37,14,3,0);
                  fflush(stdin);
-                 getch();
+                 _getch;
                  return 1 ;
 
               }
@@ -550,7 +549,7 @@ void Donor::setlddate(Date &d)
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
               }
 
 
@@ -571,11 +570,11 @@ void Donor::setlddate(Date &d)
                      textrc(str,23,90,14,4,0);
 
                      fflush(stdin) ;
-                     ch = getch() ;
+                     ch = _getch() ;
 
                      if(ch==0 || ch== -32)
                      {
-                         ch= getch() ;
+                         ch= _getch() ;
 
                          if(ch == 72 || ch==77)
                          {
@@ -617,7 +616,7 @@ void Donor::setlddate(Date &d)
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
               }
 
               else
@@ -650,7 +649,7 @@ void Donor::setlddate(Date &d)
                      if(y==-1)
                      {
                          fflush(stdin);
-                         getch();
+                         _getch;
                      }
 
                  }
@@ -659,7 +658,7 @@ void Donor::setlddate(Date &d)
                       sprintf(str," Enter Valid Record no. ");
                       textrc(str,10,37,14,3,0);
                       fflush(stdin);
-                      getch();
+                      _getch;
                  }
 
                  file.close();
@@ -686,7 +685,7 @@ void Donor::setlddate(Date &d)
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
               }
 
               else
@@ -747,7 +746,7 @@ void Donor::setlddate(Date &d)
                       sprintf(str," Enter Valid Record no. ");
                       textrc(str,10,37,14,3,0);
                       fflush(stdin);
-                      getch();
+                      _getch;
                      }
 
 
@@ -828,7 +827,7 @@ void Donor::setlddate(Date &d)
                  sprintf(str,"%-12s"," Enter Correct Bgid ");
                  textrc(str,r,37,14,3,0);
                  fflush(stdin);
-                 getch();
+                 _getch;
                  return 1 ;
 
               }
@@ -979,7 +978,7 @@ void Donor::setlddate(Date &d)
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
               }
 
 
@@ -1000,11 +999,11 @@ void Donor::setlddate(Date &d)
                      textrc(str,23,90,14,4,0);
 
                      fflush(stdin) ;
-                     ch = getch() ;
+                     ch = _getch() ;
 
                      if(ch==0 || ch== -32)
                      {
-                         ch= getch() ;
+                         ch= _getch() ;
 
                          if(ch == 72 || ch==77)
                          {
@@ -1046,7 +1045,7 @@ void Donor::setlddate(Date &d)
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
               }
 
               else
@@ -1079,7 +1078,7 @@ void Donor::setlddate(Date &d)
                      if(y==-1)
                      {
                          fflush(stdin);
-                         getch();
+                         _getch;
                      }
 
                  }
@@ -1088,7 +1087,7 @@ void Donor::setlddate(Date &d)
                       sprintf(str," Enter Valid Record no. ");
                       textrc(str,10,37,14,3,0);
                       fflush(stdin);
-                      getch();
+                      _getch;
                  }
 
                  file.close();
@@ -1115,7 +1114,7 @@ void Donor::setlddate(Date &d)
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
               }
 
               else
@@ -1176,7 +1175,7 @@ void Donor::setlddate(Date &d)
                       sprintf(str," Enter Valid Record no. ");
                       textrc(str,10,37,14,3,0);
                       fflush(stdin);
-                      getch();
+                      _getch;
                      }
 
 
@@ -1243,7 +1242,7 @@ void DonorDetail::ShowDetail()
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
                 }
 
                 else
@@ -1269,7 +1268,7 @@ void DonorDetail::ShowDetail()
                          file.close();
                          Df.ShowSpecific(x);  /// error kare toh iske pehle close karo
                          fflush(stdin);
-                         getch();
+                         _getch;
 
                          sprintf(str,"Donor%d.dat",x+1);
                          file.open(str,ios::in|ios::binary|ios::ate);
@@ -1280,7 +1279,7 @@ void DonorDetail::ShowDetail()
                               sprintf(str," No data FOund ");
                               textrc(str,6,37,14,3,0);
                               fflush(stdin);
-                              getch();
+                              _getch;
                          }
 
                          else
@@ -1298,11 +1297,11 @@ void DonorDetail::ShowDetail()
                                  sprintf(str,"%4d OF %4d ",x+1,n);
                                  textrc(str,23,90,14,4,0);
                                  fflush(stdin) ;
-                                 ch = getch() ;
+                                 ch = _getch() ;
 
                                   if(ch==0 || ch== -32)
                                   {
-                                        ch= getch() ;
+                                        ch= _getch() ;
 
                                             if(ch == 80 || ch==77)
                                             {
@@ -1336,7 +1335,7 @@ void DonorDetail::ShowDetail()
                       sprintf(str," Enter Valid Donor Id ");
                       textrc(str,10,37,14,3,0);
                       fflush(stdin);
-                      getch();
+                      _getch;
                      }
 
 
@@ -1367,7 +1366,7 @@ void DonorDetail::RecieveBlood()
                     sprintf( str , " No Donor Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
                     return ;
 
             }
@@ -1413,7 +1412,7 @@ void DonorDetail::RecieveBlood()
                       fd.read( (char *)&d , sizeof(d) );
                       d.ShowDonor();
                       fflush(stdin);
-                      getch();
+                      _getch;
 
 
        ///                     Screen();
@@ -1466,7 +1465,7 @@ void DonorDetail::RecieveBlood()
 
                         d.ShowDonor();
                         fflush(stdin);
-                        getch();
+                        _getch;
 
                         fd.seekp( dd*sizeof(d) , ios::beg );
                         fd.write( (char *)&d , sizeof(d) );
@@ -1555,7 +1554,7 @@ void PatientDetail::ShowDetail()
                     sprintf( str , " No data Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
                 }
 
                 else
@@ -1580,7 +1579,7 @@ void PatientDetail::ShowDetail()
                          file.close();
                          Pf.ShowSpecific(x);
                          fflush(stdin);
-                         getch();
+                         _getch;
 
                          sprintf(str,"Patient%d.dat",x+1);
                          file.open(str,ios::in|ios::binary|ios::ate);
@@ -1591,7 +1590,7 @@ void PatientDetail::ShowDetail()
                               sprintf(str," No data FOund ");
                               textrc(str,6,37,14,3,0);
                               fflush(stdin);
-                              getch();
+                              _getch;
                          }
 
                          else
@@ -1608,11 +1607,11 @@ void PatientDetail::ShowDetail()
                                  sprintf(str,"%4d OF %4d ",x+1,n);
                                  textrc(str,23,90,14,4,0);
                                  fflush(stdin) ;
-                                 ch = getch() ;
+                                 ch = _getch() ;
 
                                   if(ch==0 || ch== -32)
                                   {
-                                        ch= getch() ;
+                                        ch= _getch() ;
 
                                             if(ch == 80 || ch==77)
                                             {
@@ -1646,7 +1645,7 @@ void PatientDetail::ShowDetail()
                       sprintf(str," Enter Valid Patient Id ");
                       textrc(str,10,37,14,3,0);
                       fflush(stdin);
-                      getch();
+                      _getch;
                      }
 
                 }
@@ -1673,7 +1672,7 @@ void PatientDetail::ProvideToPatient()
                     sprintf( str , " No Patient Found "  );
                     textrc(str,6,37,14,3,0);
                     fflush(stdin);
-                    getch();
+                    _getch;
                     return ;
 
             }
@@ -1718,7 +1717,7 @@ void PatientDetail::ProvideToPatient()
                       fp.read( (char *)&p , sizeof(p) );
                       p.ShowPatient();
                       fflush(stdin);
-                      getch();
+                      _getch;
 
 
 
@@ -2063,7 +2062,7 @@ int main()
      cout<<"\n Enter Password (Case Sensitive) : " ;
      while(i<7 )
     {
-      pwd[i]=getch();
+      pwd[i]=_getch();
       if(pwd[i] == 13)
            break;
 
@@ -2075,7 +2074,7 @@ int main()
     if ( strcmp(pwd,"anirudh") == 1 )
     {
         cout<<"\n Correct Password !! Press Any key " ;
-        getch();
+        _getch;
         MainMenu();
 
 
@@ -2100,14 +2099,14 @@ int main()
         sprintf(str,"%-12s", " Roll no.     : ");
         textrc(str,13,37,14,3,0);
 
-        getch();
+        _getch;
 
     }
 
     else
     {
         cout<<"\n"<<pwd<<" Is WRONG  password !!!! ";
-        getch();
+        _getch;
     }
 
 }
